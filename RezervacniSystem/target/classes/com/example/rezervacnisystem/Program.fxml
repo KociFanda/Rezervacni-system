@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rezervacnisystem.ProgramController">
+   <children>
+      <Button layoutX="14.0" layoutY="480.0" mnemonicParsing="false" onAction="#back" text="Zpět">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="username" layoutX="14.0" layoutY="14.0" text="Uzivatel:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+
+
+      <TableView fx:id="existingMovies" layoutX="14.0" layoutY="75.0" prefHeight="389.0" prefWidth="551.0">
+         <columns>
+            <TableColumn fx:id="existingID" prefWidth="195.0" text="ID" />
+            <TableColumn fx:id="existingCity" minWidth="0.0" prefWidth="184.0" text="Mesto" />
+            <TableColumn fx:id="existingMovie" prefWidth="171.0" text="Nazev" />
+         </columns>
+      </TableView>
+
+
+      <Button layoutX="640.0" layoutY="93.0" mnemonicParsing="false" onAction="#makeReservation" text="Zakoupit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userSelection" layoutX="664.0" layoutY="58.0" prefHeight="35.0" prefWidth="36.0" />
+      <Label layoutX="639.0" layoutY="61.0" prefHeight="29.0" prefWidth="25.0" text="ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="userReservations" layoutX="581.0" layoutY="189.0" prefHeight="360.0" prefWidth="205.0">
+        <columns>
+          <TableColumn fx:id="reservationCity" prefWidth="102.0" text="Město" />
+          <TableColumn fx:id="reservationMovie" prefWidth="102.0" text="Film" />
+        </columns>
+      </TableView>
+      <Label layoutX="199.0" layoutY="40.0" text="Právě promítáme">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="622.0" layoutY="161.0" text="Vaše rezervace">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+
+
+
+   </children>
+</AnchorPane>
